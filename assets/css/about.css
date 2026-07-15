@@ -24,6 +24,10 @@
   font-weight: 600;
 }
 
+.about-photo-slot::before {
+  content: "Photo";
+}
+
 .about-copy h1 {
   margin-top: 0;
 }

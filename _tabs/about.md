@@ -2,12 +2,13 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+description: About Me
 ---
 
 <div class="about-page" markdown="1">
-  <div class="about-hero">
-    <div class="about-photo-slot">Photo</div>
-    <div class="about-copy" markdown="1">
+<div class="about-hero">
+<div class="about-photo-slot" aria-label="Profile photo placeholder"></div>
+<div class="about-copy" markdown="1">
 
 # About Me
 
@@ -17,6 +18,6 @@ Prior to this, I graduated with a B.Eng in Electronic Information Science and Te
 
 This website is a place for my study notes, project practice and reflections on life.
 
-    </div>
-  </div>
+</div>
+</div>
 </div>
