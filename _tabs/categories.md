@@ -11,6 +11,9 @@ description: Blog categories
 
 <p class="category-hub__intro">A home for my course notes, algorithm practice, and longer technical writeups. The cards below are ready for future posts, so each project can grow into its own collection over time.</p>
 
+{% assign cs336_posts = site.categories['Stanford CS336'] %}
+{% assign leetcode_posts = site.categories['Leetcode'] %}
+
 <div class="category-grid">
 <a class="category-card" href="#stanford-cs336">
 <div class="category-card__media category-card__media--image" style="background-image: url('/assets/img/cs336.png');"></div>
@@ -19,7 +22,7 @@ description: Blog categories
 <p>Stanford CS336 systematically explains how to train large language models (LLMs) from scratch, covering Tokenizers, Transformer architectures and variants, model training, distributed systems (4D Parallel), inference optimization, Scaling Laws, model evaluation, data generation, RLHF, RLVR, and other core topics. This blog series follows the course materials while analyzing engineering implementation details and PyTorch code, supplemented with hands-on reproduction and personal reflections to help readers build a comprehensive understanding of modern LLM training and inference workflows.</p>
 <div class="category-card__meta">
 <span class="category-pill">level: advanced</span>
-<span class="category-pill">0 posts</span>
+<span class="category-pill">{{ cs336_posts.size | default: 0 }} posts</span>
 </div>
 </div>
 </a>
@@ -31,7 +34,7 @@ description: Blog categories
 <p>Notes on core Leetcode patterns and data structures, including binary search, greedy methods, arrays, linked lists, stacks, queues, hash tables, trees, graphs, dynamic programming, and sliding windows. Each post focuses on the key idea, common edge cases, and clean implementation.</p>
 <div class="category-card__meta">
 <span class="category-pill">practice</span>
-<span class="category-pill">0 posts</span>
+<span class="category-pill">{{ leetcode_posts.size | default: 0 }} posts</span>
 </div>
 </div>
 </a>
@@ -41,7 +44,6 @@ description: Blog categories
 
 ## Stanford CS336: LLM from Scratch
 
-{% assign cs336_posts = site.categories['Stanford CS336'] %}
 {% if cs336_posts.size > 0 %}
 <ul class="post-list-mini">
 {% for post in cs336_posts %}
@@ -58,7 +60,6 @@ No posts yet. Future posts in this area can use `categories: [Stanford CS336]`.
 
 ## Algorithm: Leetcode problems
 
-{% assign leetcode_posts = site.categories['Leetcode'] %}
 {% if leetcode_posts.size > 0 %}
 <ul class="post-list-mini">
 {% for post in leetcode_posts %}
