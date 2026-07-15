@@ -28,7 +28,7 @@ description: Blog categories
 <div class="category-card__media category-card__media--image" style="background-image: url('/assets/img/algorithm.png');"></div>
 <div class="category-card__body">
 <h2>Algorithm: Leetcode problems</h2>
-<p>Problem-solving notes, patterns, edge cases, and clean implementations for Leetcode-style algorithm practice.</p>
+<p>This section organizes Leetcode practice around mainstream algorithms and data structures, including binary search, greedy strategies, arrays, linked lists, stacks, queues, hash tables, trees, graphs, dynamic programming, and sliding window techniques. Each note focuses on the core idea behind a pattern, the conditions under which it applies, common edge cases, and clean implementation details, with the goal of turning scattered problem solving into a structured algorithm toolkit.</p>
 <div class="category-card__meta">
 <span class="category-pill">practice</span>
 <span class="category-pill">0 posts</span>
