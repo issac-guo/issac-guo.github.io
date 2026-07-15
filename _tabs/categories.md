@@ -16,7 +16,7 @@ description: Blog categories
 <div class="category-card__media category-card__media--image" style="background-image: url('/assets/img/cs336.png');"></div>
 <div class="category-card__body">
 <h2>Stanford CS336: LLM from Scratch</h2>
-<p>Notes and implementation reflections for language modeling from scratch, including tokenizers, transformers, training, scaling laws, evaluation, and systems topics.</p>
+<p>Stanford CS336 systematically explains how to train large language models (LLMs) from scratch, covering Tokenizers, Transformer architectures and variants, model training, distributed systems (4D Parallel), inference optimization, Scaling Laws, model evaluation, data generation, RLHF, RLVR, and other core topics. This blog series follows the course materials while analyzing engineering implementation details and PyTorch code, supplemented with hands-on reproduction and personal reflections to help readers build a comprehensive understanding of modern LLM training and inference workflows.</p>
 <div class="category-card__meta">
 <span class="category-pill">level: advanced</span>
 <span class="category-pill">0 posts</span>

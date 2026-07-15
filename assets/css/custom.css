@@ -70,7 +70,7 @@ body:has(.category-hub) #panel-wrapper {
 .category-card {
   display: flex;
   flex-direction: column;
-  min-height: 430px;
+  min-height: 520px;
   overflow: hidden;
   border: 1px solid rgba(117, 117, 117, 0.14);
   border-radius: 8px;
@@ -123,8 +123,8 @@ body:has(.category-hub) #panel-wrapper {
 
 .category-card p {
   margin-bottom: 1.25rem;
-  font-size: 1.05rem;
-  line-height: 1.75;
+  font-size: 0.98rem;
+  line-height: 1.68;
 }
 
 .category-card__meta {
