@@ -3,7 +3,7 @@
   const LANGUAGES = {
     zh: {
       htmlLang: 'zh-CN',
-      toggleLabel: 'EN',
+      toggleLabel: '中文 / EN',
       toggleTitle: 'Switch to English',
       title: 'Zhiyuan Guo',
       subtitle: '学习笔记 / 项目实践 / 生活记录',
@@ -25,7 +25,7 @@
     },
     en: {
       htmlLang: 'en',
-      toggleLabel: '中',
+      toggleLabel: 'EN / 中文',
       toggleTitle: '切换到中文',
       title: 'Zhiyuan Guo',
       subtitle: 'Personal Blog & Notes',
@@ -158,19 +158,18 @@
   }
 
   function createToggle() {
-    const sidebarBottom = document.querySelector('#sidebar .sidebar-bottom');
+    const profile = document.querySelector('#sidebar .profile-wrapper');
 
-    if (!sidebarBottom || document.querySelector('.language-toggle')) {
+    if (!profile || document.querySelector('.language-toggle')) {
       return null;
     }
 
     const button = document.createElement('button');
     button.type = 'button';
-    button.className = 'btn btn-link nav-link language-toggle';
+    button.className = 'btn btn-link language-toggle';
     button.innerHTML = '<i class="fa-solid fa-language" aria-hidden="true"></i><span class="language-toggle__label"></span>';
 
-    const divider = sidebarBottom.querySelector('.icon-border');
-    sidebarBottom.insertBefore(button, divider || sidebarBottom.firstChild);
+    profile.appendChild(button);
 
     button.addEventListener('click', () => {
       const nextLang = button.dataset.language === 'zh' ? 'en' : 'zh';
