@@ -62,15 +62,15 @@ body:has(.category-hub) #panel-wrapper {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 1.5rem;
   margin: 1.25rem 0 2.25rem;
 }
 
 .category-card {
   display: flex;
   flex-direction: column;
-  min-height: 360px;
+  min-height: 430px;
   overflow: hidden;
   border: 1px solid rgba(117, 117, 117, 0.14);
   border-radius: 8px;
@@ -90,7 +90,7 @@ body:has(.category-hub) #panel-wrapper {
 }
 
 .category-card__media {
-  min-height: 145px;
+  min-height: 190px;
   background:
     linear-gradient(135deg, rgba(118, 176, 168, 0.2), rgba(118, 176, 168, 0.04)),
     linear-gradient(90deg, rgba(152, 51, 45, 0.88) 0 100%);
@@ -100,6 +100,11 @@ body:has(.category-hub) #panel-wrapper {
   color: #fff;
   font-size: 2rem;
   font-weight: 700;
+}
+
+.category-card__media--image {
+  background-position: top center;
+  background-size: cover;
 }
 
 .category-card__body {
@@ -112,7 +117,8 @@ body:has(.category-hub) #panel-wrapper {
 .category-card h2 {
   margin: 0 0 0.65rem;
   color: #6faea6;
-  font-size: 1.6rem;
+  font-size: 1.55rem;
+  line-height: 1.25;
 }
 
 .category-card p {
@@ -170,5 +176,9 @@ body:has(.category-hub) #panel-wrapper {
   .about-copy p {
     font-size: 1.1rem;
     line-height: 1.72;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
   }
 }
