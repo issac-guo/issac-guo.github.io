@@ -107,6 +107,13 @@ body:has(.category-hub) #panel-wrapper {
   background-size: cover;
 }
 
+.category-card__media--leetcode {
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .category-card__body {
   display: flex;
   flex: 1;
