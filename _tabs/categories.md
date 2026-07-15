@@ -25,7 +25,7 @@ description: Blog categories
 </a>
 
 <a class="category-card" href="#leetcode">
-<div class="category-card__media">Algo</div>
+<div class="category-card__media category-card__media--image" style="background-image: url('/assets/img/algorithm.png');"></div>
 <div class="category-card__body">
 <h2>Algorithm: Leetcode problems</h2>
 <p>Problem-solving notes, patterns, edge cases, and clean implementations for Leetcode-style algorithm practice.</p>
