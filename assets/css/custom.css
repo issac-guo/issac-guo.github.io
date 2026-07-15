@@ -108,17 +108,17 @@ body:has(.category-hub) #panel-wrapper {
 }
 
 .category-card__media--leetcode {
-  background-color: #fff;
-  background-position: center;
+  min-height: 240px;
+  background-position: center 46%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .category-card__body {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 1.35rem;
+  padding: 1.55rem 1.35rem 1.35rem;
 }
 
 .category-card h2 {
