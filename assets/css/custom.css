@@ -1,0 +1,174 @@
+.about-page {
+  max-width: none;
+}
+
+body:has(.about-page) main,
+body:has(.category-hub) main {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+body:has(.about-page) #panel-wrapper,
+body:has(.category-hub) #panel-wrapper {
+  display: none;
+}
+
+#avatar img {
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 1.45rem;
+  align-items: start;
+}
+
+.about-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0.35rem 1.2rem rgba(0, 0, 0, 0.08);
+}
+
+.about-copy {
+  min-width: 0;
+}
+
+.about-copy h1 {
+  margin-top: 0;
+}
+
+.about-copy p {
+  max-width: none;
+  font-size: 1.24rem;
+  line-height: 1.72;
+}
+
+.category-hub {
+  max-width: 1040px;
+}
+
+.category-hub__intro {
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+  color: var(--text-muted-color, #6c757d);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 2.25rem;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  overflow: hidden;
+  border: 1px solid rgba(117, 117, 117, 0.14);
+  border-radius: 8px;
+  background: var(--card-bg, #fff);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.06);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.category-card:hover,
+.category-card:focus-visible {
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 0.65rem 1.8rem rgba(0, 0, 0, 0.1);
+}
+
+.category-card__media {
+  min-height: 145px;
+  background:
+    linear-gradient(135deg, rgba(118, 176, 168, 0.2), rgba(118, 176, 168, 0.04)),
+    linear-gradient(90deg, rgba(152, 51, 45, 0.88) 0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.category-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.35rem;
+}
+
+.category-card h2 {
+  margin: 0 0 0.65rem;
+  color: #6faea6;
+  font-size: 1.6rem;
+}
+
+.category-card p {
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.category-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: auto;
+}
+
+.category-pill {
+  border: 1px solid rgba(118, 176, 168, 0.45);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  color: #6faea6;
+  font-size: 0.9rem;
+}
+
+.post-slot {
+  margin: 1.5rem 0 2rem;
+  border-top: 1px solid rgba(117, 117, 117, 0.18);
+  padding-top: 1.5rem;
+}
+
+.post-slot h2 {
+  margin-bottom: 0.4rem;
+}
+
+.post-slot p {
+  color: var(--text-muted-color, #6c757d);
+}
+
+.post-list-mini {
+  padding-left: 1.2rem;
+}
+
+.post-list-mini li {
+  margin: 0.45rem 0;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    max-width: 180px;
+  }
+
+  .about-copy p {
+    font-size: 1.1rem;
+    line-height: 1.72;
+  }
+}
