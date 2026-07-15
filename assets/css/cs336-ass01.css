@@ -786,9 +786,18 @@ th {
 }
 
 .cs336-ass01-wrapper img {
+  display: block;
   max-width: 100%;
   height: auto;
+  margin: 1.25rem auto;
   border-radius: 6px;
+}
+
+.cs336-ass01-wrapper div.highlighter-rouge,
+.cs336-ass01-wrapper figure.highlight,
+.cs336-ass01-wrapper .highlight {
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .cs336-ass01-wrapper div.sourceCode,
@@ -799,7 +808,9 @@ th {
 }
 
 .cs336-ass01-wrapper div.sourceCode,
-.cs336-ass01-wrapper pre.sourceCode {
+.cs336-ass01-wrapper pre.sourceCode,
+.cs336-ass01-wrapper pre.highlight,
+.cs336-ass01-wrapper .highlight pre {
   overflow-x: auto !important;
   overflow-y: hidden;
 }
