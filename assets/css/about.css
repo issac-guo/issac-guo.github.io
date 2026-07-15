@@ -1,0 +1,49 @@
+.about-page {
+  max-width: 980px;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.about-photo-slot {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px dashed rgba(117, 117, 117, 0.42);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(117, 117, 117, 0.08), rgba(117, 117, 117, 0.02));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted-color, #7a7a7a);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.about-copy h1 {
+  margin-top: 0;
+}
+
+.about-copy p {
+  font-size: 1.28rem;
+  line-height: 1.85;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo-slot {
+    max-width: 220px;
+  }
+
+  .about-copy p {
+    font-size: 1.12rem;
+    line-height: 1.75;
+  }
+}
