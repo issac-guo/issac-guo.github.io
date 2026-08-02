@@ -19,6 +19,31 @@ body:has(.category-hub) #panel-wrapper {
   object-fit: cover;
 }
 
+@media all and (min-width: 850px) {
+  #sidebar {
+    width: 240px;
+  }
+
+  #main-wrapper {
+    margin-left: 240px;
+  }
+
+  #sidebar .profile-wrapper {
+    padding-left: 2.35rem;
+    padding-right: 1rem;
+  }
+
+  #sidebar ul li.nav-item {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  #sidebar .sidebar-bottom {
+    padding-left: 1.6rem;
+    padding-right: 0.8rem;
+  }
+}
+
 .about-hero {
   display: grid;
   grid-template-columns: 132px minmax(0, 1fr);
