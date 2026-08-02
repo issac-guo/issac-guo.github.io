@@ -12,6 +12,8 @@ description: Blog categories
 <p class="category-hub__intro">A home for my course notes, algorithm practice, and longer technical writeups. The cards below are ready for future posts, so each project can grow into its own collection over time.</p>
 
 {% assign cs336_posts = site.categories['Stanford CS336'] %}
+{% assign cs336_assignment01_posts = cs336_posts | where_exp: 'post', 'post.title contains "Assignment 01"' %}
+{% assign cs336_assignment05_posts = cs336_posts | where_exp: 'post', 'post.title contains "Assignment 05"' %}
 {% assign leetcode_posts = site.categories['Leetcode'] %}
 
 <div class="category-grid">
@@ -44,15 +46,33 @@ description: Blog categories
 
 ## Stanford CS336: LLM from Scratch
 
-{% if cs336_posts.size > 0 %}
+<div class="assignment-list" markdown="1">
+
+### Assignment 01
+
+{% if cs336_assignment01_posts.size > 0 %}
 <ul class="post-list-mini">
-{% for post in cs336_posts %}
+{% for post in cs336_assignment01_posts %}
   <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 {% else %}
-No posts yet. Future posts in this area can use `categories: [Stanford CS336]`.
+No posts yet.
 {% endif %}
+
+### Assignment 05
+
+{% if cs336_assignment05_posts.size > 0 %}
+<ul class="post-list-mini">
+{% for post in cs336_assignment05_posts %}
+  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+No posts yet.
+{% endif %}
+
+</div>
 
 </section>
 

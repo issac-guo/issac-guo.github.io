@@ -159,6 +159,19 @@ body:has(.category-hub) #panel-wrapper {
   margin-bottom: 0.4rem;
 }
 
+.assignment-list {
+  display: grid;
+  gap: 1.15rem;
+  margin-top: 1rem;
+}
+
+.assignment-list h3 {
+  margin: 0;
+  color: var(--heading-color, #2d2d2d);
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
 .post-slot p {
   color: var(--text-muted-color, #6c757d);
 }
