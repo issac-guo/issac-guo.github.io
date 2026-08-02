@@ -44,6 +44,14 @@ body:has(.category-hub) #panel-wrapper {
   }
 }
 
+@media all and (min-width: 1200px) {
+  #main-wrapper > .container {
+    max-width: 1520px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
 .about-hero {
   display: grid;
   grid-template-columns: 132px minmax(0, 1fr);
