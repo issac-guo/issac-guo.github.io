@@ -158,7 +158,7 @@ body:has(.category-hub) #panel-wrapper {
 .post-slot h2 {
   margin: 0 0 1.25rem;
   color: var(--heading-color, #2d2d2d);
-  font-size: clamp(2.35rem, 3.8vw, 3.35rem);
+  font-size: clamp(2rem, 3vw, 2.75rem);
   font-weight: 600;
   line-height: 1.16;
 }
@@ -172,7 +172,7 @@ body:has(.category-hub) #panel-wrapper {
 .assignment-list h3 {
   margin: 0 0 0.75rem;
   color: var(--heading-color, #2d2d2d);
-  font-size: clamp(1.85rem, 2.6vw, 2.45rem);
+  font-size: clamp(1.55rem, 2.1vw, 2.05rem);
   font-weight: 500;
   line-height: 1.35;
 }
