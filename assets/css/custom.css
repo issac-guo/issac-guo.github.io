@@ -152,23 +152,28 @@ body:has(.category-hub) #panel-wrapper {
 .post-slot {
   margin: 1.5rem 0 2rem;
   border-top: 1px solid rgba(117, 117, 117, 0.18);
-  padding-top: 1.5rem;
+  padding-top: 2rem;
 }
 
 .post-slot h2 {
-  margin-bottom: 0.4rem;
+  margin: 0 0 1.25rem;
+  color: var(--heading-color, #2d2d2d);
+  font-size: clamp(2.35rem, 3.8vw, 3.35rem);
+  font-weight: 600;
+  line-height: 1.16;
 }
 
 .assignment-list {
   display: grid;
-  gap: 1.15rem;
-  margin-top: 1rem;
+  gap: 2.1rem;
+  margin-top: 1.1rem;
 }
 
 .assignment-list h3 {
-  margin: 0;
+  margin: 0 0 0.75rem;
   color: var(--heading-color, #2d2d2d);
-  font-size: 1.35rem;
+  font-size: clamp(1.85rem, 2.6vw, 2.45rem);
+  font-weight: 500;
   line-height: 1.35;
 }
 
@@ -177,11 +182,17 @@ body:has(.category-hub) #panel-wrapper {
 }
 
 .post-list-mini {
-  padding-left: 1.2rem;
+  padding-left: 1.55rem;
 }
 
 .post-list-mini li {
-  margin: 0.45rem 0;
+  margin: 0.55rem 0;
+  font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+  line-height: 1.45;
+}
+
+.post-list-mini li::marker {
+  font-size: 1.1em;
 }
 
 @media (max-width: 768px) {
