@@ -50,6 +50,16 @@ body:has(.category-hub) #panel-wrapper {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
+
+  #main-wrapper > .container main.col-xl-9 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+
+  #panel-wrapper.col-xl-3 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
 }
 
 .about-hero {
