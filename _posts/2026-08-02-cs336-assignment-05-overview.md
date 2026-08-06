@@ -8,10 +8,6 @@ description: "Assignment 05 作业概览中文翻译。"
 math: true
 ---
 
-<link rel="stylesheet" href="/assets/css/cs336-ass01.css?v={{ site.time | date: '%s' }}">
-
-<div class="cs336-ass01-wrapper cs336-markdown-note" markdown="1">
-
 # 1 作业概览
 
 在这次作业中，你将获得一些实践经验：训练一个语言模型，使其能够进行推理，并解决下游任务。
@@ -66,5 +62,3 @@ math: true
 | $G$ | 每个提示的生成数量 | 组大小 | 对每个提示采样得到的回复数量。 |
 | $\mathrm{len}(y)$ 或 $L$ | 回复长度 | horizon | 一个回复中生成 token 的数量。 |
 | $A^{(i,j)}$ |  | advantage | 在经过 baseline 和归一化之后，分配给第 $i$ 个提示下第 $j$ 个回复的权重。 |
-
-</div>
