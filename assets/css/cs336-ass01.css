@@ -104,11 +104,8 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   color: var(--text);
-  background:
-    linear-gradient(rgba(124, 77, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(120, 120, 140, 0.03) 1px, transparent 1px),
-    linear-gradient(135deg, var(--page-bg), #f7fbff) !important;
-  background-size: 32px 32px, 32px 32px, auto !important;
+  background: var(--main-bg, #fff) !important;
+  background-size: auto !important;
 }
 
 #quarto-header .navbar,
@@ -130,19 +127,19 @@ h3 {
 
 .quarto-title,
 #quarto-document-content {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 20px 60px rgba(83, 35, 111, 0.09);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .quarto-title {
   margin-bottom: 20px;
-  padding: 24px 28px;
+  padding: 0;
 }
 
 #quarto-document-content {
-  padding: 28px !important;
+  padding: 0 !important;
 }
 
 p,
@@ -799,10 +796,10 @@ th {
 
 .cs336-ass01-wrapper #quarto-document-content {
   max-width: none;
-  border: 1px solid var(--line, #e6e2ee);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 20px 60px rgba(83, 35, 111, 0.08);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .cs336-ass01-wrapper #TOC-body {
