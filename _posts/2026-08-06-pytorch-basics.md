@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pytorch学习基础"
-date: 2026-08-06 20:00:00 +0800
+date: 2026-08-06 17:20:00 +0800
 categories: [Stanford CS336]
 tags: [llm, pytorch, cs336, assignment-01]
 description: "Stanford CS336 Assignment 01 的 PyTorch 基础学习笔记。"
