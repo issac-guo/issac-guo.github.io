@@ -8,7 +8,7 @@ description: "Assignment 05 Chapter 1, 2, 3 中文笔记。"
 math: true
 ---
 
-# 1 作业概览
+# Chapter1 作业概览
 
 在这次作业中，你将获得一些实践经验：训练一个语言模型，使其能够进行推理，并解决下游任务。
 
