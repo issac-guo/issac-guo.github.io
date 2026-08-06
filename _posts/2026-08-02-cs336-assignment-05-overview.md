@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Assignment 05: 作业概览"
+title: "Assignment 05: Chapter 1, 2, 3"
 date: 2026-08-02 16:20:00 +0800
 categories: [Stanford CS336]
 tags: [llm, reinforcement-learning, grpo, prompting, cs336]
-description: "Assignment 05 作业概览中文翻译。"
+description: "Assignment 05 Chapter 1, 2, 3 中文笔记。"
 math: true
 ---
 
