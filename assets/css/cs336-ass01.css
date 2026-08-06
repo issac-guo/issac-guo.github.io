@@ -88,6 +88,9 @@ div.csl-indent {
   --note-ink: #3f5870;
   --bs-border-color: #d9d7df;
   --bs-code-color: #8b3f91;
+  --site-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --site-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   --quarto-code-block-border-left-color: #d9d7df;
   --quarto-code-block-border-left: #d9d7df;
 }
@@ -97,6 +100,9 @@ html {
 }
 
 body {
+  font-family: var(--site-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   color: var(--text);
   background:
     linear-gradient(rgba(124, 77, 255, 0.03) 1px, transparent 1px),
@@ -144,6 +150,8 @@ li,
 .description,
 .quarto-title-meta-contents,
 .quarto-title-meta-heading {
+  font-family: var(--site-sans);
+  line-height: 1.82;
   color: var(--muted) !important;
 }
 
@@ -260,7 +268,7 @@ div.sourceCode[data-filename]::before {
   background:
     linear-gradient(180deg, #ececf0, #e2e2e8) !important;
   box-shadow: none !important;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--site-mono);
   font-size: 0.92rem;
   font-weight: 650;
 }
@@ -443,7 +451,7 @@ strong {
 .notebook-cell__label::before {
   content: "In [ ]:";
   color: #d936a7;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--site-mono);
 }
 
 .notebook-cell pre {
@@ -460,7 +468,7 @@ strong {
 .notebook-cell code {
   color: #33323a !important;
   background: transparent !important;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--site-mono);
   font-size: 0.92rem;
 }
 
@@ -472,7 +480,7 @@ strong {
 .notebook-output__label {
   padding: 10px 14px 0;
   color: var(--violet);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--site-mono);
   font-size: 13px;
   font-weight: 700;
 }
@@ -619,7 +627,7 @@ th {
   color: #4f4f58 !important;
   background: linear-gradient(180deg, #ececf0, #dedfe5) !important;
   box-shadow: none !important;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !important;
+  font-family: var(--site-mono) !important;
   font-size: 0.92rem !important;
   font-weight: 650 !important;
 }
@@ -764,7 +772,29 @@ th {
 /* Integration layer for Chirpy/Jekyll. */
 .cs336-ass01-wrapper {
   max-width: 100%;
+  font-family: var(--site-sans);
   color: var(--text, #251b33);
+  letter-spacing: 0;
+}
+
+.cs336-ass01-wrapper p,
+.cs336-ass01-wrapper li,
+.cs336-ass01-wrapper td,
+.cs336-ass01-wrapper th,
+.cs336-ass01-wrapper .description,
+.cs336-ass01-wrapper .quarto-title-meta-contents,
+.cs336-ass01-wrapper .quarto-title-meta-heading {
+  font-family: var(--site-sans);
+  line-height: 1.82;
+}
+
+.cs336-ass01-wrapper h1,
+.cs336-ass01-wrapper h2,
+.cs336-ass01-wrapper h3,
+.cs336-ass01-wrapper h4,
+.cs336-ass01-wrapper #TOC a {
+  font-family: var(--site-sans);
+  letter-spacing: 0;
 }
 
 .cs336-ass01-wrapper #quarto-document-content {
