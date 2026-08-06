@@ -12,7 +12,7 @@ description: Blog categories
 <p class="category-hub__intro">A home for my course notes, algorithm practice, and longer technical writeups. The cards below are ready for future posts, so each project can grow into its own collection over time.</p>
 
 {% assign cs336_posts = site.categories['Stanford CS336'] %}
-{% assign cs336_assignment01_posts = cs336_posts | where_exp: 'post', 'post.title contains "Assignment 01"' %}
+{% assign cs336_assignment01_posts = cs336_posts | where_exp: 'post', 'post.title contains "Assignment 01" or post.tags contains "assignment-01"' %}
 {% assign cs336_assignment05_posts = cs336_posts | where_exp: 'post', 'post.title contains "Assignment 05"' %}
 {% assign leetcode_posts = site.categories['Leetcode'] %}
 

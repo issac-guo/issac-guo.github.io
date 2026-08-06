@@ -3,7 +3,7 @@ layout: post
 title: "Assignment 01: Tokenization & Language Modeling"
 date: 2026-07-15 20:45:00 +0800
 categories: [Stanford CS336]
-tags: [llm, tokenizer, language-modeling, pytorch, cs336]
+tags: [llm, tokenizer, language-modeling, pytorch, cs336, assignment-01]
 description: "Assignment 01 notes on tokenization and language modeling."
 math: true
 ---
