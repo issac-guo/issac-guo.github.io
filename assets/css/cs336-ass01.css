@@ -152,16 +152,17 @@ li,
   color: var(--muted) !important;
 }
 
-a {
+.cs336-ass01-wrapper a,
+#quarto-document-content a {
   color: var(--violet) !important;
   text-decoration-color: rgba(124, 77, 255, 0.36) !important;
 }
 
-a:hover {
+.cs336-ass01-wrapper a:hover,
+#quarto-document-content a:hover {
   color: #5a2dbf !important;
 }
 
-.sidebar,
 #quarto-sidebar,
 .toc-active,
 .sidebar-navigation {
@@ -169,15 +170,12 @@ a:hover {
   background: rgba(255, 255, 255, 0.72) !important;
 }
 
-.sidebar a,
 #TOC a,
 .toc-actions a {
   color: var(--muted) !important;
 }
 
-.sidebar a.active,
 #TOC a.active,
-.sidebar a:hover,
 #TOC a:hover {
   color: var(--pink) !important;
 }
